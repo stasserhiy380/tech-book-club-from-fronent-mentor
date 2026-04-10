@@ -37,8 +37,7 @@
 }
 
 .hero-bottom {
-  background-color: #faf5ef;
-  padding: 0 1.5rem 2rem;
+  margin-top: 4rem;
 }
 
 h1 {
@@ -177,6 +176,8 @@ picture img {
 }
 
 .differences {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 4rem;
   width: 280px;
   font-family: "Martian Mono";
@@ -192,7 +193,7 @@ picture img {
 }
 
 .step-item {
-  dipslay: flex;
+  display: flex;
   margin-top: 1.25rem;
   align-items: flex-start;
   gap: 1.5rem;
@@ -530,9 +531,132 @@ footer .footer-bottom .footer-socials a {
   }
 }
 @media (min-width: 1100px) {
-  section.hero-top {
+  .pro {
+    padding: 2.5rem;
+  }
+  .membership {
+    margin-top: 7.5rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  .membership h2 {
+    text-align: center;
+  }
+  .membership .membership-wrapper {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .review-membership {
+    width: 20%;
+    justify-content: space-around;
+  }
+  .hero-top {
+    padding-left: 8rem;
+    padding-right: 8rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+  .description {
+    width: 500px;
+  }
+  .review-button {
+    width: 40%;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 8.4rem;
+    padding-right: 8.4rem;
+    column-gap: 4rem;
+  }
+  .features .feature {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 20px;
+  }
+  .features .feature h2 {
+    font-size: 50px;
+  }
+  .features .feature-image {
+    margin-top: 0;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .journey {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  .journey .journey-header {
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .journey .steps {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+  }
+  .journey .steps .step-item {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+  .journey .steps .step-item p {
+    margin-top: 0;
+  }
+  .journey .journey-header {
+    width: 500px;
+    text-align: center;
+  }
+  .review {
+    text-align: center;
+  }
+  .review-author {
+    text-align: center;
+  }
+  .rating-stars {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .review-section {
+    margin-top: 7.5rem;
+    margin-bottom: 7.5rem;
+  }
+  .differences {
+    padding-left: 8.4rem;
+    padding-right: 8.4rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    margin: 0;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .differences .differences-wrapper {
+    grid-column: 1;
+  }
+  .differences .differences-image {
+    grid-column: 2;
+    width: 100%;
+  }
+  footer .footer-bottom .footer-socials {
+    margin-top: 0;
+  }
+  .footer-bottom {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+  .review-section .review {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
   }
 }
 
