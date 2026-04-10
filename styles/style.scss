@@ -1,0 +1,585 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/static/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/static/Inter_18pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Martian Mono';
+  src: url('../assets/fonts/martian-mono/static/MartianMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Martian Mono';
+  src: url('../assets/fonts/martian-mono/static/MartianMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Martian Mono';
+  src: url('../assets/fonts/martian-mono/static/MartianMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.hero-top{
+  background-color: #faf5ef;
+  background-image:
+          linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  padding: 1.5rem;
+  padding-bottom:60px;
+}
+
+.hero-bottom{
+  background-color: #faf5ef;
+  padding: 0 1.5rem 2rem;
+}
+
+h1{
+  font-family: "Martian Mono";
+  margin-top:3rem;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 45.6px */
+  letter-spacing: -2px;
+  width:240px;
+}
+
+.logo-row{
+  background-color: #faf5ef;
+  background-image:
+          linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.hero-bottom img{
+
+  display: block;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.description{
+  margin-top:1.5rem;
+  color:#385159;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  letter-spacing: -0.5px;
+}
+
+.review-button{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top:2rem;
+  border-radius:0.5rem;
+  border:2px solid #062630;
+  background-color: #FFF5EF;
+  color:#062630;
+  font-family: "Martian Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 20.8px */
+  letter-spacing: -1px;
+  padding:1.25rem 1.5rem;
+  text-transform: uppercase;
+  span{
+    display:block;
+  }
+
+}
+
+.review-button:hover{
+  border: 2px solid var(--colors-neutral-900, #062630);
+  background: linear-gradient(90deg, var(--colors-light-salmon-100, #FFE2D1) 0%, var(--colors-light-salmon-50, #FFF5EF) 100%);
+
+  box-shadow: 0 0 0 3px #FFF, 0 0 0 5px var(--colors-neutral-700, #385159);
+}
+
+.heroes-rating{
+  margin-top:1.25rem;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap:12px;
+
+  .avatars{
+    width:110px;
+    height:40px;
+  }
+  .rating-description{
+    color:#385159;
+    font-family: "Martian Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 16.8px */
+    letter-spacing: -1px;
+    width:140px;
+  }
+}
+
+.rating-stars{
+  display:flex;
+  flex-direction: row;
+  margin-left:-2px;
+}
+
+.features{
+  padding:0 1rem;
+}
+
+
+.feature-list{
+  margin-top:1.5rem;
+  li{
+  padding-left:2rem;
+    margin-top:1rem;
+  position:relative;
+  color:#385159;
+  &::before{
+    content:"";
+    position:absolute;
+    left:0;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: url("../assets/images/icon-check.svg") center / contain no-repeat;
+  }
+}}
+
+.circled-word{
+  position:relative;
+  display:inline-block;
+  img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:140%;
+    max-width:none;
+
+  }
+}
+
+.bold{
+  font-weight: 600;
+}
+
+picture{
+  img{
+    border-radius: 0.5rem;
+  }
+}
+
+
+.differences{
+  margin-top:4rem;
+  width:280px;
+  font-family: "Martian Mono";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 44.2px */
+  letter-spacing: -2px;
+}
+
+.feature-image{
+  margin-top:2.5rem;
+}
+
+.step-item{
+  dipslay: flex;
+  margin-top:1.25rem;
+  align-items:flex-start;
+  gap:1.5rem;
+  p{
+    margin-top:1rem;
+    font-family: "Martian Mono";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: -1px;
+    color:#062630;
+  }
+}
+.step-number{
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #062630;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #062630;
+}
+@mixin width($value){
+  width: ($value / 16)+rem;
+}
+.journey{
+  margin-top:3.75rem;
+  margin-left:1rem;
+  margin-right:1rem;
+  border-radius: 0.75rem;
+  background-image:
+          linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-color:#FAF5F3;
+  padding: 4rem 1rem;
+  h2{
+    color:#062630;
+    font-family: "Martian Mono";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 44.2px */
+    letter-spacing: -2px;
+    margin-bottom: 0.75rem;
+    @include width(200);
+  }
+}
+
+.steps{
+  margin-top:2rem;
+}
+
+.membership{
+  padding: 0 1rem;
+  h2{
+    color:#062630;
+    font-family: "Martian Mono";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 44.2px */
+    letter-spacing: -2px;
+  }
+  .membership-item{
+    padding:1.5rem;
+    border:1px solid #E6E1DF;
+    border-radius: 0.5rem;
+  }
+  h3{
+    font-family: "Martian Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 26.4px */
+    letter-spacing: -1px;
+    color:#062630;
+  }
+  .price{
+    color:#062630;
+    font-family: "Martian Mono";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 44.2px */
+    letter-spacing: -1px;
+    span {
+      margin-left:0.5rem;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      letter-spacing: -0.5px;
+    }
+  }
+  hr{
+    height: 1px;
+    background-color: #E6E1DF;
+    margin:1.5rem 0;
+  }
+  ul{
+    margin-top:1.5rem;
+    li{
+      color:#385159;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      letter-spacing: -0.5px;
+      &::before{
+        content:"";
+        display:inline-block;
+        width:0.5rem;
+        height:0.5rem;
+        background:url("../assets/images/icon-check.svg") center / contain no-repeat;
+        margin-right:0.5rem;
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-bottom:-4px;
+      }
+    }
+  }
+  a{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top:1.5rem;
+    display:block;
+    border-radius: 8px;
+    border: 2px solid  #062630;
+    background-color: #FFF5EF;
+    color:#062630;
+    font-family: "Martian Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: -1px;
+    padding:1.25rem 1.5rem;
+    width:100%;
+    &:hover{
+      border: 2px solid #062630;
+      background: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+
+      box-shadow: 0 0 0 3px #FFF, 0 0 0 5px var(--colors-neutral-700, #385159);
+    }
+  }
+
+
+}
+
+.pro{
+  background-color: #FAF5F3;
+}
+
+
+.membership-wrapper{
+  display:grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+}
+
+
+.review-section{
+  display:grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5rem;
+  padding:0 1rem;
+  .review{
+    color:#062630;
+    font-family: "Martian Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 26.4px */
+    letter-spacing: -1px;
+    width:201px;
+  }
+  .review-author{
+    color:#385159;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: -0.5px;
+  }
+}
+
+footer{
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  background-image:
+          linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+  .review-heros-wrapper{
+    margin-top:1.5rem;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    .developers-joined{
+      display:flex;
+      flex-direction:row;
+      align-items: center;
+      gap:0.75rem;
+      p{
+        color:#FFF;
+        font-family: "Martian Mono";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%; /* 16.8px */
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+
+  background-color:#062630;
+  padding:3rem 1rem 1.5rem 1rem;
+  h2{
+    color:#FAF5F3;
+    text-align: center;
+    font-family: "Martian Mono";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 44.2px */
+    letter-spacing: -2px;
+  }
+
+  .footer-bottom{
+    margin-top:1.5rem;
+    .footer-year{
+      color:#FFF;
+      text-align: center;
+      font-family: "Martian Mono";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 16.8px */
+      letter-spacing: -1px;
+    }
+    .footer-socials{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap:1.5rem;
+      margin-top:1rem;
+      a{
+        display:block;
+      }
+    }
+  }
+}
+
+.developers-joined-img{
+  width:6.875rem;
+}
+
+.rating-stars-wrapper{
+  p{
+    display:block;
+  }
+}
+
+.hr-footer{
+  border-top:1px solid #385159;
+  margin-top:4rem;
+}
+
+.review-membership{
+  width:100%;
+  border-radius: 8px;
+  border: 2px solid #FFF;
+  padding:1.25rem 1.5rem;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:1.5rem;
+  span{
+    display:block;
+    font-family: "Martian Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 20.8px */
+    letter-spacing: -1px;
+    color:#FFF;
+    text-transform: uppercase;
+  }
+  &:hover{
+    border: 2px solid var(--colors-neutral-0, #FFF);
+    background: linear-gradient(90deg, var(--colors-neutral-700, #385159) 0%, var(--colors-neutral-900, #062630) 100%);
+
+    box-shadow: 0 0 0 3px var(--colors-neutral-900, #062630), 0 0 0 5px var(--colors-neutral-200, #E6E1DF);
+  }
+
+}
+
+
+@media (min-width: 768px) {
+  h1{
+    font-size: 62px;
+    width:600px;
+  }
+  .membership-wrapper{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+  .review-button{
+    width:60%;
+  }
+  .heroes-rating{
+    justify-content: left;
+
+  }
+  .feature{
+    h2{
+      font-size:50px;
+      width:400px;
+
+    }
+  }
+  .features{
+    padding-top:5rem;
+  }
+  .review-section {
+    .review {
+      font-size: 34px;
+      width: 100%;
+    }
+  }
+  .review-membership{
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+  }
+  .developers-joined{
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .footer-bottom{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+
+@media (min-width: 1100px) {
+  section.hero-top{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
